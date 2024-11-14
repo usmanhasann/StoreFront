@@ -1,8 +1,17 @@
-# React + Vite
+# StoreFront
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce platform a UI built with React, featuring React Router for intuitive and seamless navigation.
 
-Currently, two official plugins are available:
+## Badges
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![osman](https://img.shields.io/badge/React%20-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white)
+
+![Dependabot](https://img.shields.io/badge/Javascript-025E8C?style=for-the-badge&logo=dependabot&logoColor=white)
+
+![Google Assistant](https://img.shields.io/badge/REACT%20ROUTER-4285F4?style=for-the-badge&logo=google%20assistant&logoColor=white)
+## Demo
+
+https://storefront-ui-usman.netlify.app/
+
+![StoreFront](storefront.png)
+
