@@ -1,14 +1,15 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import CartHome from "../components/CartHome";
+import { HomeCard } from "../Pages/HomeCard";
 import CartItems from "../components/CartItems";
 
 const AllRoutes = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<CartHome />} />
+        <Route path="/" element={<HomeCard />} />
         <Route path="/CartItems" element={<CartItems />} />
+        <Route path="/HomeCard" element={<HomeCard />} />
       </Routes>
     </>
   );

@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import Logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import "./Header.css";
 const Header = () => {
   return (
     <Box
@@ -34,38 +35,44 @@ const Header = () => {
             </Typography>
           </Box>
         </Link>
-        <Box display={"flex"} gap={1}>
-          <Link to="/">
+
+        <nav className="navigation">
+          <Box display={"flex"} gap={2}>
+            <NavLink to="/" className={"link"}>
+              <Typography
+                fontFamily={"Poppins, sans-serif"}
+                fontSize={"18px"}
+                fontWeight={"400"}
+                color={"rgb(0, 0, 0)"}
+              >
+                Home
+              </Typography>
+            </NavLink>
+            <NavLink to="/CartItems" className={"link"}>
+              <Typography
+                fontFamily={"Poppins, sans-serif"}
+                fontWeight={400}
+                fontSize={"18px"}
+                color={"rgb(0, 0, 0)"}
+              >
+                Cart
+              </Typography>
+            </NavLink>
+          </Box>
+        </nav>
+
+        <Link to="/CartItems">
+          <Box>
             <Typography
               fontFamily={"Poppins, sans-serif"}
               fontSize={"18px"}
-              fontWeight={"400"}
+              fontWeight={500}
               color={"rgb(0, 0, 0)"}
             >
-              Home
+              Cart:2
             </Typography>
-          </Link>
-          <Link to="/CartItems">
-            <Typography
-              fontFamily={"Poppins, sans-serif"}
-              fontWeight={400}
-              fontSize={"18px"}
-              color={"rgb(0, 0, 0)"}
-            >
-              cart
-            </Typography>
-          </Link>
-        </Box>
-        <Box>
-          <Typography
-            fontFamily={"Poppins, sans-serif"}
-            fontSize={"18px"}
-            fontWeight={500}
-            color={"rgb(0, 0, 0)"}
-          >
-            Cart:2
-          </Typography>
-        </Box>
+          </Box>
+        </Link>
       </Box>
     </Box>
   );
